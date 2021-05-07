@@ -33,7 +33,7 @@ class TextToMd:
 
             # mdファイルを生成
             md_filename = txt_filename.replace('.txt', '.md')
-            md = open(f'{self.output_dir}/{md_filename}', 'w')
+            md = open(f'{self.output_dir}/{md_filename}', 'w', encoding='UTF-8')
             md.write(txt_converted)
 
             print(f'[INFO]converted ===> output/{md_filename}')
